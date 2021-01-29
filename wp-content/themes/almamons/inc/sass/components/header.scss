@@ -1,0 +1,16 @@
+header{
+  ul{
+    li{
+      &:last-child{
+        a{
+          background-color:$almamons-dark;
+          text-transform: uppercase;
+          font-weight: 700;
+          &:hover{
+            background-color: $almanons-light;
+          }
+        }
+      }
+    }
+  }
+}
