@@ -79,11 +79,5 @@
 		</aside>
 	</div>
 
-	<div id="overlay">
-		<div id="intro">
-			<img src="<?php bloginfo('template_directory'); ?>/img/logo-intro.svg">
-			<h1>Alma Mons Adventures</h1>
-			<h3>Avantura počinje sa nama</h3>
-		</div>
-	</div>
+	
 <?php get_footer(); ?>

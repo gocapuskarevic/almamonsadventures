@@ -1,17 +1,58 @@
-/* Error: Undefined variable.
- *   ,
- * 6 |           background-color:$almamons-dark;
- *   |                            ^^^^^^^^^^^^^^
- *   '
- *   sass\components\header.scss 6:28  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502            background-color:$almamons-dark;\d\a   \2502                             ^^^^^^^^^^^^^^\a   \2575 \a   sass\\components\\header.scss 6:28  root stylesheet";
+@charset "UTF-8";
+/*header{
+  ul{
+    li{
+      &:last-child{
+        a{
+          background-color:$almamons-dark;
+          text-transform: uppercase;
+          font-weight: 700;
+          &:hover{
+            background-color: $almanons-light;
+          }
+        }
+      }
+    }
+  }
+}*/
+.navbar-toggler {
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+.navbar-toggler:focus {
+  outline: none;
+}
+
+header .navbar .sub-menu {
+  display: none;
+}
+header .navbar .sub-menu li {
+  display: block;
+}
+@media (max-width: 768px) {
+  header .navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .navbar ul li a {
+    font-size: 25px;
+  }
+}
+
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+@media (max-width: 768px) {
+  .menu-item-has-children:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "";
+    color: #fff;
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

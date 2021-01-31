@@ -25,7 +25,7 @@ jQuery(function($) {
 	jQuery( document ).ready(function(){
 		// my code goes here
 		
-			jQuery(".icon").on('click', function(e){
+			/*jQuery(".icon").on('click', function(e){
 				e.preventDefault();
 				jQuery(".navbar").toggleClass("show");
 			});
@@ -33,7 +33,15 @@ jQuery(function($) {
 			jQuery("#open").on('click', function(e){
 				e.preventDefault();
 				jQuery(".sub-menu").toggleClass("show");
-			});
+			});*/
+
+			$('#toggler').on('click',function(){
+				if( $('#menu-top-bar').css('display') == 'block'){
+					$('#menu-top-bar').css('display','none');
+				}else if($('#menu-top-bar').css('display') == 'none'){
+					$('#menu-top-bar').css('display','block');
+				}
+			})
 	
 			/*var acookie = getCookie("intro");
 			if (!acookie) {

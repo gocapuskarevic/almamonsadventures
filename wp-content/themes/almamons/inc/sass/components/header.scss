@@ -1,4 +1,4 @@
-header{
+/*header{
   ul{
     li{
       &:last-child{
@@ -11,6 +11,56 @@ header{
           }
         }
       }
+    }
+  }
+}*/
+
+.navbar-toggler{
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  &:focus{
+    outline: none;
+  }
+}
+header{
+  .navbar{
+    .sub-menu{
+      display: none;
+      li{
+        display: block;
+      }
+    }
+    @media (max-width: 768px) {
+      ul{
+        li{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a{
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.menu-item-has-children{
+  &:hover{
+    .sub-menu{
+      display: block;
+    }
+  }
+  @media (max-width: 768px) {
+    &:after{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0d7";
+      color: #fff;
+      position: relative;
     }
   }
 }
