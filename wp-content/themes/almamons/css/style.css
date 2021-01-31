@@ -54,14 +54,6 @@ header {
 	z-index: 100;
 }
 
-nav {
-	position: absolute;
-	width: 100%;
-	top: 3.5vw;
-	right: 0;
-	background: #043D21;
-}
-
 .icon {
 	display: none;
 	float: right;
@@ -80,9 +72,7 @@ nav {
 	line-height: 4.5vw;
 }
 
-.navbar {
-	display: block;
-}
+
 
 ul {
 	text-align: right;
