@@ -45,6 +45,10 @@ a:hover {
     }
   }
 }*/
+html, body {
+  overflow-x: hidden;
+}
+
 .logo {
   width: 150px;
   position: absolute;
@@ -71,6 +75,7 @@ a:hover {
 
 header {
   background-color: #043D21;
+  height: 58px;
   margin: 48px 0;
 }
 @media (max-width: 1200px) {
@@ -168,17 +173,15 @@ header .menu-item-has-children .sub-menu li:last-child {
   font-weight: 400;
   text-transform: none;
 }
-@media (max-width: 1200px) {
-  header .menu-item-has-children .sub-menu li {
-    margin-left: 10px;
-  }
-}
 header .menu-item-has-children .sub-menu li a {
   display: block;
   text-align: left;
+  transition: 0.2s all ease;
 }
-header .menu-item-has-children .sub-menu li a:first-child:hover {
-  background-color: #8DC63F;
+@media (max-width: 1200px) {
+  header .menu-item-has-children .sub-menu li a {
+    margin-left: 10px;
+  }
 }
 @media (max-width: 1200px) {
   header .menu-item-has-children .sub-menu li a:first-child:after {
@@ -207,8 +210,15 @@ header .menu-item-has-children:hover .sub-menu {
 }
 
 .hero {
-  margin-top: 125px;
+  margin-top: -155px;
+  position: relative;
   z-index: -5;
+  min-height: 300px;
+}
+.hero img {
+  object-fit: cover;
+  min-height: 300px;
+  width: 100%;
 }
 
 .avantura {

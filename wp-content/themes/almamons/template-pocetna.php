@@ -7,34 +7,9 @@ Template Name: Pocetna
 
 	<div class="hero">
 		<div class="slides">
-			<input type="radio" name="r" id="r1" checked>
-			<input type="radio" name="r" id="r2">
-			<input type="radio" name="r" id="r3">
-			<input type="radio" name="r" id="r4">
 			<div class="slide s1">
 				<img src="<?php bloginfo('template_directory'); ?>/img/slide1.jpg">
 			</div>
-			
-			<div class="slide">
-				<img src="<?php bloginfo('template_directory'); ?>/img/slide2.jpg">
-			</div>
-		
-		
-			<div class="slide">
-				<img src="<?php bloginfo('template_directory'); ?>/img/slide3.jpg">
-			</div>
-		
-		
-			<div class="slide">
-				<img src="<?php bloginfo('template_directory'); ?>/img/slide4.jpg">
-			</div>
-			
-		</div>
-		<div class="navigationslide">
-			<label for="r1" class="bar"></label>
-			<label for="r2" class="bar"></label>
-			<label for="r3" class="bar"></label>
-			<label for="r4" class="bar"></label>
 		</div>
 	</div>
 

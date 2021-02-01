@@ -15,7 +15,9 @@
     }
   }
 }*/
-
+html,body{
+  overflow-x: hidden;
+}
 
 .logo{
   width: 150px;
@@ -40,6 +42,7 @@
 }
 header{
   background-color: $almamons-dark;
+  height: 58px;
   margin: 48px 0;
   @media (max-width: $extra-large){
     height: 48px;
@@ -126,17 +129,15 @@ header{
           font-weight: 400;
           text-transform: none;
         }
-        @media (max-width: $extra-large){
-          margin-left: 10px;
-        }
         a{
           display: block;
           text-align: left;
+          transition: .2s all ease;
+          @media (max-width: $extra-large){
+            margin-left: 10px;
+          }
         }
         a:first-child{
-          &:hover{
-            background-color:  $almamons-light;
-          }
           @media (max-width: $extra-large) {
             &:after{
               content: "";
@@ -173,8 +174,15 @@ header{
 }
 
 .hero{
-  margin-top: 125px;
+  margin-top: -155px;
+  position: relative;
   z-index: -5;
+  min-height: 300px;
+  img{
+    object-fit: cover;
+    min-height: 300px;
+    width: 100%;
+  }
 }
 
 .avantura{
