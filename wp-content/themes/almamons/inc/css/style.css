@@ -157,7 +157,6 @@ header .menu-item-has-children .sub-menu {
   header .menu-item-has-children .sub-menu {
     position: relative;
     margin-top: 0;
-    display: none;
   }
 }
 header .menu-item-has-children .sub-menu li {

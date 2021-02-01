@@ -34,8 +34,8 @@ jQuery(function($) {
 				e.preventDefault();
 				jQuery(".sub-menu").toggleClass("show");
 			});*/
-
-			$('.menu-item-has-children').on('click',function(){
+			$('.sub-menu').css('display','none');
+			$('li.menu-item-has-children').on('click',function(){
 				if( $('.sub-menu').css('display') == 'block'){
 					$('.sub-menu').css('display','none');
 				}else if($('.sub-menu').css('display') == 'none'){
