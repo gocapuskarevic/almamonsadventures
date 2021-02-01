@@ -16,6 +16,19 @@
   }
 }*/
 
+
+.logo{
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  @media (max-width: $extra-large){
+    width: 100px;
+    top: 20px;
+  }
+}
+
 .navbar-toggler{
   border: none;
   position: absolute;
@@ -27,65 +40,133 @@
 }
 header{
   background-color: $almamons-dark;
-  margin: 30px 0;
+  margin: 48px 0;
+  @media (max-width: $extra-large){
+    height: 48px;
+  }
+  .menu-primary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
   .navbar{
     padding: 0;
-    a{
-      text-align: left;
+    z-index: 50;
+    .navbar-toggler-icon{
+      padding-top: 5px;
+      background-image: none;
+      i{
+        font-size: 30px;
+      }
+    }
+    li{
+      transition: .2s all ease;
       &:hover{
-        color: $white;
-        text-decoration: none;
-        transition: .2s all ease;
+        background-color: $almamons-light;
+        a{
+          color: $white;
+          text-decoration: none;
+        }
       }
     }
     #menu-top-bar{
       display: flex;
       justify-content: center;
-    }
-    .sub-menu{
-      display: none;
-      position: absolute;
-      min-width: 250px;
-      li{
+      @media (max-width: $extra-large){
         display: block;
+      }
+    }
+    ul{
+      background-color: $almamons-dark;
+      @media (max-width: $extra-large){
+        margin-top: 48px;
+        min-width: 270px;
+      }
+      li{
+        &:first-child{
+          @media (max-width: 380px){
+            padding-top: 15px;
+          }
+        }
+        &:last-child{
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        @media (max-width: $extra-large){
+          display: block;
+        }
         a{
-          text-align: left;
-          &:hover{
-            color: $white;
-            text-decoration: none;
-            transition: .2s all ease;
-            background-color: $almanons-light;
-          }
+          display: inline-block;
+          padding: 15px 20px;
         }
       }
     }
-    @media (max-width: $medium) {
-      ul{
-        li{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          a{
-            font-size: 25px;
-          }
-        }
-      }
-    }
+    
   }
   .menu-item-has-children{
     position: relative;
+    .sub-menu{
+      display: none;
+      position: absolute;
+      min-width: 270px;
+      @media (max-width: $extra-large){
+        position: relative;
+        margin-top: 0;
+        display: none ;
+      }
+      li{
+        display: block;
+        transition: .2s all ease;
+        &:first-child{
+          @media (max-width: 380px){
+            padding-top: 0;
+          }
+        }
+        &:last-child{
+          font-weight: 400;
+          text-transform: none;
+        }
+        @media (max-width: $extra-large){
+          margin-left: 10px;
+        }
+        a{
+          display: block;
+          text-align: left;
+        }
+        a:first-child{
+          &:hover{
+            background-color:  $almamons-light;
+          }
+          @media (max-width: $extra-large) {
+            &:after{
+              content: "";
+            }
+          }
+        }
+        &:hover{
+          background-color: $almamons-light;
+          a{
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
     &:hover{
       .sub-menu{
         display: block;
       }
     }
-    @media (max-width: $medium) {
-      &:after{
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f0d7";
-        color: #fff;
-        position: relative;
+    a:first-child{
+      @media (max-width: $extra-large) {
+        &:after{
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f0d7";
+          color: #fff;
+          position: relative;
+          margin-left: 10px;
+        }
       }
     }
   }
@@ -93,4 +174,21 @@ header{
 
 .hero{
   margin-top: 125px;
+  z-index: -5;
+}
+
+.avantura{
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.left{
+  img{
+    margin-bottom: 20px;
+  }
+}
+
+h2.other{
+  margin-top: 0;
+  margin-bottom: 30px;
 }
