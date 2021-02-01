@@ -128,7 +128,7 @@ header .navbar ul {
   }
 }
 @media (max-width: 380px) {
-  header .navbar ul li:first-child {
+  header .navbar ul {
     padding-top: 15px;
   }
 }

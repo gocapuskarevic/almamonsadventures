@@ -85,12 +85,10 @@ header{
         margin-top: 48px;
         min-width: 270px;
       }
+      @media (max-width: 380px){
+        padding-top: 15px;
+      }
       li{
-        &:first-child{
-          @media (max-width: 380px){
-            padding-top: 15px;
-          }
-        }
         &:last-child{
           font-weight: 600;
           text-transform: uppercase;
