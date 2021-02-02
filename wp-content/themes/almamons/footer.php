@@ -6,19 +6,19 @@
 				<div class="row">
 					<div class="col-md-6">
 						<img src="<?php bloginfo('template_directory'); ?>/img/logo.svg">
-						<p>Alma Mons Adventures <br>
-						Svetojovanska 16, 21000 Novi Sad <br>
-						Matični broj: 28727968 <br>
-						Pib: 112221685 <br>
-						Tekući račun: 325-9500700090586-37<br>kod Vojvođanske banke <br>
-						Kontakt tel. 064/11-40-264</p>
-					</div>
-					<div class="col-md-6">
 						<div class="social-links">
 							<p>Pratite nas na društvenim mrežama:</p>
 							<a href="https://www.facebook.com/Alma-Mons-Adventures-109158571016103"><i class="fab fa-facebook-f"></i></a>
 							<a href="https://www.instagram.com/almamonsadventures/"><i class="fab fa-instagram"></i></a>
 						</div>
+					</div>
+					<div class="col-md-6 info">
+						<p>Alma Mons Adventures <br>
+							Svetojovanska 16, 21000 Novi Sad <br>
+							Matični broj: 28727968 <br>
+							Pib: 112221685 <br>
+							Tekući račun: 325-9500700090586-37<br>kod Vojvođanske banke <br>
+							Kontakt tel. 064/11-40-264</p>
 					</div>
 				</div>
 			</div>

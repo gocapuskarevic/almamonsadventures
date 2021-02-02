@@ -314,8 +314,11 @@ footer {
 footer img {
   width: 80px;
 }
+footer .info {
+  margin-top: 104px;
+}
 footer .social-links {
-  margin-top: 84px;
+  padding-top: 20px;
 }
 footer .social-links i {
   font-size: 25px;
