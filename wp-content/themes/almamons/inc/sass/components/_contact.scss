@@ -1,46 +1,70 @@
 @import "vars";
 
-.main-wrapper{
-  padding-top: 60px;
-  .container{
-    padding-bottom: 60px;
+.contact-page{
+  .main-wrapper{
+    padding-top: 60px;
+    .container{
+      padding-bottom: 60px;
+    }
   }
-}
-.contact-map{
-  height: 400px;
-}
-input, textarea{
-  border: none;
-  padding: 15px;
-  &:focus{
-    border-bottom: 1px solid $almamons-blue;
+  .wpcf7{
+    font-size: 20px;
+    .wpcf7-not-valid-tip{
+      font-size: 14px !important;
+    }
+    .wpcf7-response-output{
+      border-color: $almamons-blue !important;
+    }
   }
-}
-textarea{
-  border-bottom: 1px solid $white;
-}
-input{
-  border-bottom: 1px solid black;
-}
-input:focus, textarea:focus{
-  outline: none;
-}
-
-input[type="submit"]{
-  background-color: $almamons-blue;
-  border: none;
-  color: $white;
-  font-family: $sans-serif;
-  text-transform: uppercase;
-  padding: 15px 25px;
-  width: 80%;
-  @media (max-width: $medium){
+  .contact-map{
+    height: 400px;
+  }
+  input:focus, textarea:focus{
+    outline: none;
+    &::placeholder{
+      color: lighten($black-light, 70%);
+    }
+  }
+  input, textarea{
+    border: none;
+    padding: 15px;
+    &:focus{
+      border-bottom: 1px solid $almamons-blue;
+    }
+  }
+  input{
+    border-bottom: 1px solid $black-light;
+    &::placeholder{
+      color: $black-light;
+      transition: .3s all ease;
+    }
+  }
+  textarea{
+    border-bottom: 1px solid $black-light;
+    &::placeholder{
+      color: $black-light;
+      transition: .3s all ease;
+    }
+  }
+  
+  input[type="submit"]{
+    background-color: $almamons-blue;
+    border: none;
+    color: $white;
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    width: 100%;
+    &:hover{
+      background-color: $almamons-light;
+    }
+  }
+  .wpcf7-form-control{
     width: 100%;
   }
-  &:hover{
-    background-color: $almamons-light;
+  aside{
+    width: 100%;
+    float: none;
   }
 }
-.wpcf7-form-control{
-  width: 100%;
-}
+

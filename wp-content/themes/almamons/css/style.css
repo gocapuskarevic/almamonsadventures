@@ -342,6 +342,11 @@ fieldset {
     font-size: 18px;
 }
 
+aside {
+	width: 25%;
+	float: right;
+}
+
 footer {
 	color: #fff;
 	background: #043D21;

@@ -3,6 +3,7 @@ h1{
   font-size: $large-size;
   font-family: $sans-serif;
   color: $almamons-blue;
+  margin-bottom: 20px;
 }
 h2{
   margin: 20px 0;
@@ -11,7 +12,8 @@ p{
   font-family: $serif;
   font-size: $base;
   label{
-    font-size: $medium-size;
+    font-size: 20px;
+    display: block;
   }
 }
 a{

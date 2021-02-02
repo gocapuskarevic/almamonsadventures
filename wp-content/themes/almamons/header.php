@@ -21,7 +21,7 @@
 	<script src="https://kit.fontawesome.com/ef420427c7.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 	<div class="container navigations">
     <div class="row">
       <div class="col">

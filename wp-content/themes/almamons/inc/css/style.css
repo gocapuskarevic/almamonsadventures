@@ -13,6 +13,7 @@ h1 {
   font-size: 42px;
   font-family: "Raleway", sans-serif;
   color: #1B75BB;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -24,7 +25,8 @@ p {
   font-size: 18px;
 }
 p label {
-  font-size: 22px;
+  font-size: 20px;
+  display: block;
 }
 
 a {
@@ -255,57 +257,69 @@ h2.other {
 /* FONTS */
 /* FONT-SIZE */
 /* BREAK POINTS */
-.main-wrapper {
+.contact-page .main-wrapper {
   padding-top: 60px;
 }
-.main-wrapper .container {
+.contact-page .main-wrapper .container {
   padding-bottom: 60px;
 }
-
-.contact-map {
+.contact-page .wpcf7 {
+  font-size: 20px;
+}
+.contact-page .wpcf7 .wpcf7-not-valid-tip {
+  font-size: 14px !important;
+}
+.contact-page .wpcf7 .wpcf7-response-output {
+  border-color: #1B75BB !important;
+}
+.contact-page .contact-map {
   height: 400px;
 }
-
-input, textarea {
+.contact-page input:focus, .contact-page textarea:focus {
+  outline: none;
+}
+.contact-page input:focus::placeholder, .contact-page textarea:focus::placeholder {
+  color: #d3d8dc;
+}
+.contact-page input, .contact-page textarea {
   border: none;
   padding: 15px;
 }
-input:focus, textarea:focus {
+.contact-page input:focus, .contact-page textarea:focus {
   border-bottom: 1px solid #1B75BB;
 }
-
-textarea {
-  border-bottom: 1px solid #fff;
+.contact-page input {
+  border-bottom: 1px solid #212529;
 }
-
-input {
-  border-bottom: 1px solid black;
+.contact-page input::placeholder {
+  color: #212529;
+  transition: 0.3s all ease;
 }
-
-input:focus, textarea:focus {
-  outline: none;
+.contact-page textarea {
+  border-bottom: 1px solid #212529;
 }
-
-input[type=submit] {
+.contact-page textarea::placeholder {
+  color: #212529;
+  transition: 0.3s all ease;
+}
+.contact-page input[type=submit] {
   background-color: #1B75BB;
   border: none;
   color: #fff;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   padding: 15px 25px;
-  width: 80%;
+  width: 100%;
 }
-@media (max-width: 768px) {
-  input[type=submit] {
-    width: 100%;
-  }
-}
-input[type=submit]:hover {
+.contact-page input[type=submit]:hover {
   background-color: #8DC63F;
 }
-
-.wpcf7-form-control {
+.contact-page .wpcf7-form-control {
   width: 100%;
+}
+.contact-page aside {
+  width: 100%;
+  float: none;
 }
 
 footer {
