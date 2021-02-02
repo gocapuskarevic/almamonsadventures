@@ -10,9 +10,11 @@
 
 			<?php
 			endif;
-
 			/* Start the Loop */
-			while ( have_posts() ) : the_post(); echo '<h1>hellllllllllloooooooooooo</h1>';
+			while ( have_posts() ) : the_post();
+
+			the_content();
+
 			
 			if(is_page()) $template = 'page';
 
@@ -34,16 +36,5 @@
 
 		endif; ?>
 
-	<div class="wrap">
-		<h2 class="other"><?php the_title(); ?></h2>
-		<content>
-			<?php get_template_part('includes/section','content');?>
-		</content>
-		<aside>
-			<?php if( is_active_sidebar('page-sidebar') ): ?>
-				<?php dynamic_sidebar('page-sidebar'); ?>
-			<?php endif; ?>
-		</aside>
-	</div>
 
 <?php get_footer();?>
