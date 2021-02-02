@@ -49,4 +49,15 @@ function owl_carousel_css_scripts(){
 	wp_enqueue_script('owl-min-js',plugin_dir_url('OwlCarousel2-2.3.4').'OwlCarousel2-2.3.4/dist/owl.carousel.min.js',array('jquery'),'',true);
 }
 add_action( 'wp_enqueue_scripts', 'owl_carousel_css_scripts' );
-?>
+
+add_filter( 'body_class','my_body_classes' );
+function my_body_classes( $classes ) {
+	if( is_page('kontakt') )
+    $classes[] = 'contact-page';
+     
+    return $classes;
+}
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+add_filter( 'wpcf7_autop_or_not', '__return_false' );

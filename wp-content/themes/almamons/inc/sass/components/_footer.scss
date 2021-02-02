@@ -1,0 +1,25 @@
+footer{
+  padding: 50px 0;
+  img{
+    width: 80px;
+  }
+  .info{
+    margin-top: 104px;
+  }
+  .social-links{
+    padding-top: 20px;
+    i{
+      font-size: 25px;
+      transition: .2s all ease;
+      margin-right: 10px;
+      &.fa-instagram{
+        font-size: 29px;
+        position: relative;
+        top: 2px;
+      }
+      &:hover{
+        color: $almamons-light;
+      }
+    }
+  }
+}
