@@ -24,10 +24,6 @@ p {
   font-family: "Merriweather", serif;
   font-size: 18px;
 }
-p label {
-  font-size: 20px;
-  display: block;
-}
 
 a {
   color: #fff;
@@ -266,11 +262,17 @@ h2.other {
 .contact-page .wpcf7 {
   font-size: 20px;
 }
+.contact-page .wpcf7 label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
 .contact-page .wpcf7 .wpcf7-not-valid-tip {
   font-size: 14px !important;
 }
 .contact-page .wpcf7 .wpcf7-response-output {
   border-color: #1B75BB !important;
+  font-size: 18px;
 }
 .contact-page .contact-map {
   height: 400px;

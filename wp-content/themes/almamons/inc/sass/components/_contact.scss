@@ -9,11 +9,17 @@
   }
   .wpcf7{
     font-size: 20px;
+    label{
+      font-size: 20px;
+      display: block;
+      margin-bottom: 20px;
+    }
     .wpcf7-not-valid-tip{
       font-size: 14px !important;
     }
     .wpcf7-response-output{
       border-color: $almamons-blue !important;
+      font-size: 18px;
     }
   }
   .contact-map{
