@@ -308,4 +308,27 @@ input[type=submit]:hover {
   width: 100%;
 }
 
+footer {
+  padding: 50px 0;
+}
+footer img {
+  width: 80px;
+}
+footer .social-links {
+  margin-top: 84px;
+}
+footer .social-links i {
+  font-size: 25px;
+  transition: 0.2s all ease;
+  margin-right: 10px;
+}
+footer .social-links i.fa-instagram {
+  font-size: 29px;
+  position: relative;
+  top: 2px;
+}
+footer .social-links i:hover {
+  color: #8DC63F;
+}
+
 /*# sourceMappingURL=style.css.map */
