@@ -49,6 +49,4 @@ function owl_carousel_css_scripts(){
 	wp_enqueue_script('owl-min-js',plugin_dir_url('OwlCarousel2-2.3.4').'OwlCarousel2-2.3.4/dist/owl.carousel.min.js',array('jquery'),'',true);
 }
 add_action( 'wp_enqueue_scripts', 'owl_carousel_css_scripts' );
-
-echo basename( __FILE__ );
 ?>

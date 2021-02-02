@@ -1,6 +1,18 @@
 @import 'vars';
+h1{
+  font-size: $large-size;
+  font-family: $sans-serif;
+  color: $almamons-blue;
+}
 h2{
   margin: 20px 0;
+}
+p{
+  font-family: $serif;
+  font-size: $medium-size;
+  label{
+    font-size: $medium-size;
+  }
 }
 a{
   color: $white;

@@ -1,12 +1,10 @@
-<!-- <?php //default page template ?>
+<?php //default page template ?>
 
 
-<?php //if( get_field( 'google_map' ) ) : ?>
+<?php if( get_field( 'google_map' ) ) : ?>
   <section class='contact-map'>
-    <?php //the_field( 'google_map' ); ?>
+    <?php the_field( 'google_map' ); ?>
   </section>
 
 
-<?php //endif; ?> -->
-
-<h1>alooooooooooooooooooo</h1>
+<?php endif; ?>

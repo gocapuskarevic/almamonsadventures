@@ -9,8 +9,22 @@
 /* FONTS */
 /* FONT-SIZE */
 /* BREAK POINTS */
+h1 {
+  font-size: 42px;
+  font-family: "Raleway", sans-serif;
+  color: #1B75BB;
+}
+
 h2 {
   margin: 20px 0;
+}
+
+p {
+  font-family: "Markazi", serif;
+  font-size: 22px;
+}
+p label {
+  font-size: 22px;
 }
 
 a {
@@ -234,6 +248,24 @@ header .menu-item-has-children:hover .sub-menu {
 h2.other {
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+/* VARIABLES */
+/* COLORS */
+/* FONTS */
+/* FONT-SIZE */
+/* BREAK POINTS */
+.contact-map {
+  height: 300px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+textarea:focus, input:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

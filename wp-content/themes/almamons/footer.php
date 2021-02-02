@@ -1,4 +1,6 @@
-	<img class="bottom" src="<?php bloginfo('template_directory'); ?>/img/bottom.png">
+	<?php if( !is_page('kontakt') ) : ?>
+		<img class="bottom" src="<?php bloginfo('template_directory'); ?>/img/bottom.png">
+	<?php endif; ?>
 		<footer>
 		<div class="wrap">
 			<div class="third colapse">
