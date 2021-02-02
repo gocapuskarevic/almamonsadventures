@@ -10,11 +10,11 @@
 
 			<?php
 			endif;
+
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
-			the_content();
-
+				the_content();
 			
 			if(is_page()) $template = 'page';
 
@@ -35,6 +35,17 @@
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+<!-- 
+	<div class="wrap">
+		<h2 class="other"><?php the_title(); ?></h2>
+		<content>
+			<?php //get_template_part('includes/section','content');?>
+		</content>
+		<aside>
+			<?php //if( is_active_sidebar('page-sidebar') ): ?>
+				<?php //dynamic_sidebar('page-sidebar'); ?>
+			<?php //endif; ?>
+		</aside>
+	</div> -->
 
 <?php get_footer();?>
