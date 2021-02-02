@@ -1,0 +1,46 @@
+@import "vars";
+
+.main-wrapper{
+  padding-top: 60px;
+  .container{
+    padding-bottom: 60px;
+  }
+}
+.contact-map{
+  height: 400px;
+}
+input, textarea{
+  border: none;
+  padding: 15px;
+  &:focus{
+    border-bottom: 1px solid $almamons-blue;
+  }
+}
+textarea{
+  border-bottom: 1px solid $white;
+}
+input{
+  border-bottom: 1px solid black;
+}
+input:focus, textarea:focus{
+  outline: none;
+}
+
+input[type="submit"]{
+  background-color: $almamons-blue;
+  border: none;
+  color: $white;
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  width: 80%;
+  @media (max-width: $medium){
+    width: 100%;
+  }
+  &:hover{
+    background-color: $almamons-light;
+  }
+}
+.wpcf7-form-control{
+  width: 100%;
+}

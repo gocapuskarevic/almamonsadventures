@@ -20,8 +20,8 @@ h2 {
 }
 
 p {
-  font-family: "Markazi", serif;
-  font-size: 22px;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
 }
 p label {
   font-size: 22px;
@@ -255,17 +255,57 @@ h2.other {
 /* FONTS */
 /* FONT-SIZE */
 /* BREAK POINTS */
+.main-wrapper {
+  padding-top: 60px;
+}
+.main-wrapper .container {
+  padding-bottom: 60px;
+}
+
 .contact-map {
-  height: 300px;
+  height: 400px;
+}
+
+input, textarea {
+  border: none;
+  padding: 15px;
+}
+input:focus, textarea:focus {
+  border-bottom: 1px solid #1B75BB;
+}
+
+textarea {
+  border-bottom: 1px solid #fff;
 }
 
 input {
-  border: none;
   border-bottom: 1px solid black;
 }
 
-textarea:focus, input:focus {
+input:focus, textarea:focus {
   outline: none;
+}
+
+input[type=submit] {
+  background-color: #1B75BB;
+  border: none;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  width: 80%;
+}
+@media (max-width: 768px) {
+  input[type=submit] {
+    width: 100%;
+  }
+}
+input[type=submit]:hover {
+  background-color: #8DC63F;
+}
+
+.wpcf7-form-control {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
