@@ -1,0 +1,14 @@
+@import 'vars';
+h2{
+  margin: 20px 0;
+}
+a{
+  color: $white;
+  text-decoration: none;
+  font-family: $sans-serif;
+  font-size: $medium-size;
+  &:hover{
+    color: $white;
+    text-decoration: none;
+  }
+}

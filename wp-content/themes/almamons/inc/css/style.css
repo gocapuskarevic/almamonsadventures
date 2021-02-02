@@ -45,10 +45,6 @@ a:hover {
     }
   }
 }*/
-html, body {
-  overflow-x: hidden;
-}
-
 .logo {
   width: 150px;
   position: absolute;
@@ -59,8 +55,10 @@ html, body {
 @media (max-width: 1200px) {
   .logo {
     width: 100px;
-    top: 20px;
   }
+}
+.logo img {
+  padding-left: 15px;
 }
 
 .navbar-toggler {
@@ -81,6 +79,7 @@ header {
 @media (max-width: 1200px) {
   header {
     height: 48px;
+    margin: 28px 0;
   }
 }
 header .menu-primary {
@@ -124,7 +123,7 @@ header .navbar ul {
 @media (max-width: 1200px) {
   header .navbar ul {
     margin-top: 48px;
-    min-width: 270px;
+    min-width: 260px;
   }
 }
 @media (max-width: 380px) {
@@ -144,6 +143,7 @@ header .navbar ul li:last-child {
 header .navbar ul li a {
   display: inline-block;
   padding: 15px 20px;
+  width: 100%;
 }
 header .menu-item-has-children {
   position: relative;
@@ -151,12 +151,14 @@ header .menu-item-has-children {
 header .menu-item-has-children .sub-menu {
   display: none;
   position: absolute;
-  min-width: 270px;
+  min-width: 240px;
+  transition: 0.2s all ease;
 }
 @media (max-width: 1200px) {
   header .menu-item-has-children .sub-menu {
     position: relative;
     margin-top: 0;
+    min-width: 260px;
   }
 }
 header .menu-item-has-children .sub-menu li {

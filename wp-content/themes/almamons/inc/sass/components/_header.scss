@@ -16,7 +16,7 @@
   }
 }*/
 html,body{
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 .logo{
@@ -27,7 +27,9 @@ html,body{
   z-index: 150;
   @media (max-width: $extra-large){
     width: 100px;
-    top: 20px;
+  }
+  img{
+    padding-left: 15px;
   }
 }
 
@@ -46,6 +48,7 @@ header{
   margin: 48px 0;
   @media (max-width: $extra-large){
     height: 48px;
+    margin: 28px 0;
   }
   .menu-primary{
     display: flex;
@@ -83,7 +86,7 @@ header{
       background-color: $almamons-dark;
       @media (max-width: $extra-large){
         margin-top: 48px;
-        min-width: 270px;
+        min-width: 260px;
       }
       @media (max-width: 380px){
         padding-top: 15px;
@@ -99,6 +102,7 @@ header{
         a{
           display: inline-block;
           padding: 15px 20px;
+          width: 100%;
         }
       }
     }
@@ -109,10 +113,12 @@ header{
     .sub-menu{
       display: none;
       position: absolute;
-      min-width: 270px;
+      min-width: 240px;
+      transition: .2s all ease;
       @media (max-width: $extra-large){
         position: relative;
         margin-top: 0;
+        min-width: 260px;
       }
       li{
         display: block;
