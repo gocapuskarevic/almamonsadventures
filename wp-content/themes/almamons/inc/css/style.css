@@ -36,6 +36,20 @@ a:hover {
   text-decoration: none;
 }
 
+.primary {
+  display: inline-block;
+  padding: 15px 20px;
+  border: 2px solid #043D21;
+  background-color: #043D21;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+}
+.primary:hover, .primary:active, .primary:focus {
+  border: 2px solid #043D21;
+  background-color: #fff;
+  color: #043D21;
+}
+
 /* VARIABLES */
 /* COLORS */
 /* FONTS */
@@ -87,6 +101,8 @@ header {
   background-color: #043D21;
   height: 58px;
   margin: 48px 0;
+  z-index: 10;
+  position: relative;
 }
 @media (max-width: 1200px) {
   header {
@@ -246,6 +262,68 @@ header .menu-item-has-children:hover .sub-menu {
 h2.other {
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.hero_default {
+  height: 70vh;
+  margin-top: -154px;
+  z-index: -10;
+}
+@media (max-width: 768px) {
+  .hero_default {
+    height: 50vh;
+  }
+}
+.hero_default h1 {
+  line-height: 70vh;
+  color: #043D21;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .hero_default h1 {
+    height: 50vh;
+  }
+}
+
+.main-wrapper {
+  padding-top: 60px;
+}
+
+.about h2 {
+  color: #043D21;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding: 40px 0;
+}
+.about p {
+  margin: 0 0 20px 0;
+  /*move later*/
+  display: block !important;
+}
+.about ul {
+  margin-bottom: 30px;
+}
+.about .flex {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .about .flex {
+    display: block;
+  }
+}
+.about .image_wrapper {
+  padding: 0 15px;
+}
+.about .image_wrapper img {
+  margin-bottom: 20px;
+  width: 100%;
+  object-fit: cover;
+}
+.about .primary {
+  display: block;
+  text-align: center;
+  margin: 0 15px;
 }
 
 /* VARIABLES */
