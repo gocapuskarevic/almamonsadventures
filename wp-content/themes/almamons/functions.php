@@ -57,6 +57,7 @@ function my_body_classes( $classes ) {
      
     return $classes;
 }
+include('guides-pt.php');
 
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
