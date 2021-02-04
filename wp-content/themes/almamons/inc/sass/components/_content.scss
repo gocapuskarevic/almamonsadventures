@@ -1,0 +1,42 @@
+.main-wrapper{
+  padding-top: 60px;
+}
+.about{
+  h2{
+    color: $almamons-dark;
+    font-family: $sans-serif;
+    font-weight: 600;
+    padding: 40px 0;
+  }
+  p{
+    margin: 0 0 20px 0;
+    /*move later*/
+    display: block !important;
+  }
+  ul{
+    margin-bottom: 30px;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: $medium){
+      display: block;
+    }
+  }
+  .image_wrapper{
+    padding: 0 15px;
+    img{
+      margin-bottom: 20px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .primary{
+    display: block;
+    text-align: center;
+    margin: 0 15px;
+  }
+  .guides_wrapper{
+    margin-bottom: 60px;
+  }
+}

@@ -33,7 +33,6 @@
 			</div>
 		</div>
 	</div>
-	
 	<header>
     <div class="container navigations">
       <div class="row">

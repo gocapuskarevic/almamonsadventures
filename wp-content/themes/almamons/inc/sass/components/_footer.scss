@@ -26,3 +26,13 @@ footer{
     }
   }
 }
+.copyright{
+  background-color: darken($almamons-dark, 2);
+  text-align: center;
+  padding: 7px 0;
+  p{
+    color: $white;
+    margin: 0;
+    font-size: 15px;
+  }
+}

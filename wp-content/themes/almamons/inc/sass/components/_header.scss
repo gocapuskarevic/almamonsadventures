@@ -15,9 +15,6 @@
     }
   }
 }*/
-html,body{
-  //overflow-x: hidden;
-}
 
 .logo{
   width: 150px;
@@ -46,6 +43,8 @@ header{
   background-color: $almamons-dark;
   height: 58px;
   margin: 48px 0;
+  z-index: 10;
+  position: relative;
   @media (max-width: $extra-large){
     height: 48px;
     margin: 28px 0;

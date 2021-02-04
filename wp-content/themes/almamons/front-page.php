@@ -4,7 +4,8 @@
 			<div class="slide s1">
 				<img src="<?php bloginfo('template_directory'); ?>/img/slide1.jpg">
 			</div>
-	</div></div>
+		</div>
+	</div>
 
 <!-- Section -->
 
