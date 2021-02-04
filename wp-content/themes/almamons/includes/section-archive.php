@@ -7,7 +7,7 @@
 				<img src="<?php the_post_thumbnail_url();?>">
 				<a href="<?php the_permalink();?>">Saznajte više</a>
 			</div>
-		<?php the_excerpt();?>
+		<p><?php the_excerpt();?></p>
 		</div>
 
 		

@@ -355,4 +355,15 @@ footer .social-links i:hover {
   color: #8DC63F;
 }
 
+.copyright {
+  background-color: #03331c;
+  text-align: center;
+  padding: 7px 0;
+}
+.copyright p {
+  color: #fff;
+  margin: 0;
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
