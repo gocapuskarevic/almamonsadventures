@@ -32,7 +32,7 @@
 					</div>
 				  
 				 
-				<?php the_excerpt();?>
+				<p><?php the_excerpt();?></p>
 					</div>
 
 					

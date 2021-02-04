@@ -328,10 +328,15 @@ footer {
   padding: 50px 0;
 }
 footer img {
-  width: 80px;
+  width: 100px;
 }
 footer .info {
-  margin-top: 104px;
+  margin-top: 124px;
+}
+@media (max-width: 768px) {
+  footer .info {
+    margin-top: 50px;
+  }
 }
 footer .social-links {
   padding-top: 20px;
