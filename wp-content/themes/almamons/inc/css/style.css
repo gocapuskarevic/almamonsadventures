@@ -325,6 +325,9 @@ h2.other {
   text-align: center;
   margin: 0 15px;
 }
+.about .guides_wrapper {
+  margin-bottom: 60px;
+}
 
 /* VARIABLES */
 /* COLORS */

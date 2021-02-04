@@ -7,7 +7,8 @@ $args = array(
   'posts_per_page'  => 3,
   'post_type'       => 'vodici',
   'orderby'         => 'date',
-  'order'           => 'ASC',
+	'order'           => 'ASC',
+	'posts_per_page'	=> -1,
 );
 $guides = new WP_Query($args);
 
@@ -63,7 +64,7 @@ $guides = new WP_Query($args);
 				</div>
 				<?php if ( $guides->have_posts() ) : ?>
         <?php while ( $guides->have_posts() ) : $guides->the_post(); ?>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 guides_wrapper">
 						<div class="image_wrapper">
 							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Slika vodiča">
 						</div>
