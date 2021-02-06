@@ -15,10 +15,10 @@ body {
 	padding: 0;
 	line-height: 1.8em;
 }
-.hero, header, .wrap{
+/*.hero, header, .wrap{
 	animation: hideHero 3s;
 	animation-iteration-count: 1
-}
+}*/
 
 a {
 	text-decoration: none;

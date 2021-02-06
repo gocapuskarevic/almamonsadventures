@@ -163,6 +163,9 @@ header .navbar .full-width .menu-top-bar-container ul li {
   border-bottom: 9px solid #fff;
   cursor: pointer;
 }
+header .navbar .full-width .menu-top-bar-container ul li.current-menu-item {
+  border-bottom: 9px solid #043D21;
+}
 @media (max-width: 1200px) {
   header .navbar .full-width .menu-top-bar-container ul li {
     display: block;
@@ -211,6 +214,9 @@ header .navbar .full-width .menu-top-bar-container .menu-item-has-children .sub-
   padding: 15px 15px 0;
   height: auto;
   border-bottom: none;
+}
+header .navbar .full-width .menu-top-bar-container .menu-item-has-children .sub-menu li.current-menu-item a {
+  border-bottom: 9px solid #043D21;
 }
 @media (max-width: 1200px) {
   header .navbar .full-width .menu-top-bar-container .menu-item-has-children .sub-menu li {

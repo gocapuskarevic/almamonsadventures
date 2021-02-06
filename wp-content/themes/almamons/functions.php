@@ -3,7 +3,7 @@
 function load_css() {
 	wp_register_style('main', get_template_directory_uri() . '/css/style.css?v=17', array(), false, 'all');
 	wp_enqueue_style('main');
-	wp_register_style('primary', get_template_directory_uri() . '/inc/css/style.css?v=988', array(), false, 'all');
+	wp_register_style('primary', get_template_directory_uri() . '/inc/css/style.css?v=98', array(), false, 'all');
 	wp_enqueue_style('primary');
 }
 add_action('wp_enqueue_scripts', 'load_css');
@@ -62,3 +62,12 @@ include('guides-pt.php');
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+  if (in_array('current-menu-item', $classes) ){
+    $classes[] = 'active ';
+  }
+  return $classes;
+}
