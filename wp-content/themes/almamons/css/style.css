@@ -15,6 +15,10 @@ body {
 	padding: 0;
 	line-height: 1.8em;
 }
+.hero, header, .wrap{
+	animation: hideHero 3s;
+	animation-iteration-count: 1
+}
 
 a {
 	text-decoration: none;
@@ -418,7 +422,8 @@ footer .social {
 	text-align: center;
 	opacity: 0;
 	visibility: hidden;
-	animation: intro 8s;
+	animation: intro 6s;
+	animation-iteration-count: 1
 }
 
 #overlay #intro {
@@ -440,6 +445,7 @@ footer .social {
 	line-height: 5.2vw;
 	opacity: 1;
 	animation: slide 4s;
+	animation-iteration-count: 1
 }
 
 #overlay #intro h3 {
@@ -451,6 +457,8 @@ footer .social {
 	line-height: 4.5vw;
 	opacity: 1;
 	animation: fade 5s;
+	font-weight: 600;
+	animation-iteration-count: 1
 }
 
 
@@ -479,6 +487,15 @@ th {
 	0% {opacity: 0;}
 	90% {opacity: 0;}
 	100% {opacity: 1;}
+}
+
+@keyframes hideHero {
+	from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slide {
