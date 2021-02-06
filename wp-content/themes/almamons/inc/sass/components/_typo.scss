@@ -26,13 +26,13 @@ a{
   display: inline-block;
   padding: 15px 20px;
   border: 2px solid $almamons-dark;
-  //background-color: $almamons-dark;
-  //color: $white;
+  background-color: $almamons-dark;
+  color: $white;
   transition: .2s all ease-in-out;
   &:hover, &:active, &:focus{
     border: 2px solid $almamons-dark;
-    //background-color: $white;
-    //color: $almamons-dark;
+    background-color: $white;
+    color: $almamons-dark;
   }
 }
 header{

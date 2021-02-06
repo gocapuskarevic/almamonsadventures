@@ -29,8 +29,8 @@
           <div class="menu-primary">
 						<div class="logo">
 							<a href="<?php echo get_site_url(); ?>">
-								<img src="<?php bloginfo('template_directory'); ?>/img/logo.svg">
 								<span>PLANINARSKO DRUŠTVO</span>
+								<img src="<?php bloginfo('template_directory'); ?>/img/logo.svg">
 							</a>
   					</div>
             <nav class="navbar navbar-expand-xl navbar-dark">
