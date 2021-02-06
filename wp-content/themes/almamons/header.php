@@ -22,31 +22,24 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="container navigations">
-    <div class="row">
-      <div class="col">
-				<div class="logo">
-					<a href="<?php echo get_site_url(); ?>">
-						<img src="<?php bloginfo('template_directory'); ?>/img/logo.svg">
-					</a>
-  			</div>
-			</div>
-		</div>
-	</div>
 	<header>
     <div class="container navigations">
       <div class="row">
         <div class="col">
           <div class="menu-primary">
-            <div>
-            </div>
+						<div class="logo">
+							<a href="<?php echo get_site_url(); ?>">
+								<span>PLANINARSKO DRUŠTVO</span>
+								<img src="<?php bloginfo('template_directory'); ?>/img/logo.svg">
+							</a>
+  					</div>
             <nav class="navbar navbar-expand-xl navbar-dark">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
 								<i class="fas fa-bars"></i>
 								</span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse full-width" id="navbarSupportedContent">
 							<?php 
 								wp_nav_menu(
 									array(

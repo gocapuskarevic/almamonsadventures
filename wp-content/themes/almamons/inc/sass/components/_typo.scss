@@ -18,7 +18,7 @@ a{
   font-family: $sans-serif;
   font-size: $medium-size;
   &:hover{
-    color: $white;
+    //color: $white;
     text-decoration: none;
   }
 }
@@ -33,5 +33,12 @@ a{
     border: 2px solid $almamons-dark;
     background-color: $white;
     color: $almamons-dark;
+  }
+}
+header{
+  a, span{
+    color: $almamons-dark;
+    font-weight: 500;
+    font-size: 20px;
   }
 }

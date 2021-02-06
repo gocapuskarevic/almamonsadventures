@@ -11,6 +11,11 @@ footer{
   }
   .social-links{
     padding-top: 20px;
+    a{
+      &:hover{
+        color: $almamons-light;
+      }
+    }
     i{
       font-size: 25px;
       transition: .2s all ease;
