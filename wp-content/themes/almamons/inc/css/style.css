@@ -32,7 +32,6 @@ a {
   font-size: 22px;
 }
 a:hover {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -40,14 +39,15 @@ a:hover {
   display: inline-block;
   padding: 15px 20px;
   border: 2px solid #043D21;
-  background-color: #043D21;
-  color: #fff;
   transition: 0.2s all ease-in-out;
 }
 .primary:hover, .primary:active, .primary:focus {
   border: 2px solid #043D21;
-  background-color: #fff;
+}
+
+header a, header span {
   color: #043D21;
+  font-weight: 500;
 }
 
 /* VARIABLES */
@@ -72,19 +72,15 @@ a:hover {
   }
 }*/
 .logo {
-  width: 150px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 150;
-}
-@media (max-width: 1200px) {
-  .logo {
-    width: 100px;
-  }
+  text-align: center;
 }
 .logo img {
-  padding-left: 15px;
+  width: 90px;
+}
+.logo span {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .navbar-toggler {
@@ -98,10 +94,6 @@ a:hover {
 }
 
 header {
-  background-color: #043D21;
-  height: 58px;
-  margin: 48px 0;
-  z-index: 10;
   position: relative;
 }
 @media (max-width: 1200px) {
@@ -112,7 +104,7 @@ header {
 }
 header .menu-primary {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 }
 header .navbar {
@@ -126,15 +118,31 @@ header .navbar .navbar-toggler-icon {
 header .navbar .navbar-toggler-icon i {
   font-size: 30px;
 }
-header .navbar li {
+header .navbar .full-width {
+  height: 100%;
+}
+header .navbar .full-width .menu-top-bar-container {
+  height: 100%;
+}
+header .navbar .full-width .menu-top-bar-container ul {
+  height: 100%;
+}
+header .navbar .full-width .menu-top-bar-container ul li {
+  margin: 0 20px 15px 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
   transition: 0.2s all ease;
+  border-bottom: 5px solid #fff;
 }
-header .navbar li:hover {
-  background-color: #8DC63F;
+header .navbar .full-width .menu-top-bar-container ul li a {
+  padding: 0;
 }
-header .navbar li:hover a {
-  color: #fff;
-  text-decoration: none;
+header .navbar .full-width .menu-top-bar-container ul li:hover {
+  border-bottom: 5px solid #043D21;
+}
+header .navbar .full-width .menu-top-bar-container ul li:hover a {
+  color: #043D21;
 }
 header .navbar #menu-top-bar {
   display: flex;
@@ -143,20 +151,6 @@ header .navbar #menu-top-bar {
 @media (max-width: 1200px) {
   header .navbar #menu-top-bar {
     display: block;
-  }
-}
-header .navbar ul {
-  background-color: #043D21;
-}
-@media (max-width: 1200px) {
-  header .navbar ul {
-    margin-top: 48px;
-    min-width: 260px;
-  }
-}
-@media (max-width: 380px) {
-  header .navbar ul {
-    padding-top: 15px;
   }
 }
 header .navbar ul li:last-child {
@@ -217,11 +211,7 @@ header .menu-item-has-children .sub-menu li a {
     content: "";
   }
 }
-header .menu-item-has-children .sub-menu li:hover {
-  background-color: #8DC63F;
-}
 header .menu-item-has-children .sub-menu li:hover a {
-  color: #fff;
   text-decoration: none;
 }
 header .menu-item-has-children:hover .sub-menu {
@@ -239,9 +229,7 @@ header .menu-item-has-children:hover .sub-menu {
 }
 
 .hero {
-  margin-top: -155px;
   position: relative;
-  z-index: -5;
   min-height: 300px;
 }
 .hero img {

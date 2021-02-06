@@ -17,16 +17,14 @@
 }*/
 
 .logo{
-  width: 150px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 150;
-  @media (max-width: $extra-large){
-    width: 100px;
-  }
+  text-align: center;
   img{
-    padding-left: 15px;
+    width: 90px;
+  }
+  span{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
   }
 }
 
@@ -40,10 +38,8 @@
   }
 }
 header{
-  background-color: $almamons-dark;
-  height: 58px;
-  margin: 48px 0;
-  z-index: 10;
+  //background-color: $almamons-dark;
+  //z-index: 10;
   position: relative;
   @media (max-width: $extra-large){
     height: 48px;
@@ -51,7 +47,7 @@ header{
   }
   .menu-primary{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between
   }
   .navbar{
@@ -64,13 +60,29 @@ header{
         font-size: 30px;
       }
     }
-    li{
-      transition: .2s all ease;
-      &:hover{
-        background-color: $almamons-light;
-        a{
-          color: $white;
-          text-decoration: none;
+    .full-width{
+      height: 100%;
+      .menu-top-bar-container{
+        height: 100%;
+        ul{
+          height: 100%;
+          li{
+            margin: 0 20px 15px 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition: .2s all ease;
+            border-bottom: 5px solid $white;
+            a{
+              padding: 0;
+            }
+            &:hover{
+              border-bottom: 5px solid $almamons-dark;
+              a{
+                color: $almamons-dark;
+              }
+            }
+          }
         }
       }
     }
@@ -82,13 +94,13 @@ header{
       }
     }
     ul{
-      background-color: $almamons-dark;
+      //background-color: $almamons-dark;
       @media (max-width: $extra-large){
-        margin-top: 48px;
-        min-width: 260px;
+        //margin-top: 48px;
+        //min-width: 260px;
       }
       @media (max-width: 380px){
-        padding-top: 15px;
+        //padding-top: 15px;
       }
       li{
         &:last-child{
@@ -147,9 +159,9 @@ header{
           }
         }
         &:hover{
-          background-color: $almamons-light;
+          //background-color: $almamons-light;
           a{
-            color: $white;
+            //color: $white;
             text-decoration: none;
           }
         }
@@ -176,9 +188,9 @@ header{
 }
 
 .hero{
-  margin-top: -155px;
+  //margin-top: -155px;
   position: relative;
-  z-index: -5;
+  //z-index: -5;
   min-height: 300px;
   img{
     object-fit: cover;
